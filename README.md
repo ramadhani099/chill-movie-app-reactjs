@@ -47,9 +47,7 @@ mock-data/movies.sample.json
 
 2. `cp .env.example .env`, isi `VITE_API_BASE_URL` (contoh `https://abc123.mockapi.io/api/v1`).
 3. `npm install`
-4. (Opsional) isi data contoh: `npm run seed`
-   (pakai `npm run seed -- --clear` untuk menghapus semua data lama dulu). Butuh Node 20.6+.
-5. `npm run dev` → buka `http://localhost:5173`.
+4. `npm run dev` → buka `http://localhost:5173`.
 
 ### Resource `users` (untuk Daftar)
 
