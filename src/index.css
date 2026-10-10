@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Lato", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --color-chill-bg: #181a1c;
+  --color-chill-surface: #22282a;
+  --color-chill-border: #3d4142;
+  --color-chill-muted: #c1c2c4;
+  --color-chill-accent: #3254ff;
+  --color-chill-accent-light: #5b78ff;
+}
+
+html,
+body {
+  background-color: var(--color-chill-bg);
+  color: #fff;
+}
+
+/* Sembunyikan scrollbar pada baris film (tetap bisa di-scroll) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Latar halaman login: hitam di atas, pola lingkaran biru di bawah */
+.login-bg {
+  background:
+    linear-gradient(to bottom, #000 0%, #000 25%, rgba(0, 0, 0, 0) 62%),
+    radial-gradient(circle at 50% 50%, #1b2f8f 0 41%, transparent 43%) 0 0 / 110px 76px,
+    linear-gradient(to bottom, #000 0%, #070c2b 55%, #0a1650 100%);
+  background-color: #000;
+}
